@@ -71,10 +71,15 @@ function dirSnake(event){
     if(dirInterdi){return}
     dirInterdi=true
 
-    const up = 90
-    const left = 81
-    const down =  83
-    const right = 68
+    let up = 90
+    let left = 81
+    let down =  83
+    let right = 68
+
+    let haut = 38
+    let bas = 40
+    let gauche = 37
+    let droite = 39
 
     const dirSnake = event.keyCode
 
@@ -96,6 +101,22 @@ function dirSnake(event){
         moveX = 0
     }
     if(dirSnake===right&&!dirL){
+        moveY = 0
+        moveX = 10
+    }
+    if(dirSnake === haut && !dirD){
+        moveY = -10
+        moveX = 0
+    }
+    if(dirSnake === gauche && !dirR) {
+        moveY = 0
+        moveX = -10
+    }
+    if(dirSnake===bas && !dirU) {
+        moveY = 10
+        moveX = 0
+    }
+    if(dirSnake===droite&&!dirL){
         moveY = 0
         moveX = 10
     }
