@@ -8,6 +8,21 @@ body{
         #0000ff
     );
 }
+#pscore{
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+}
+#prestart{
+    position: absolute;
+    top: 15px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
 #canvas{
     position: absolute;
     top: 50%;
