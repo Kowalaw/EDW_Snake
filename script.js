@@ -36,10 +36,8 @@ function actualisationCanvas(){
 }
 
 function creeElementDuSnake(elementDuSnake){
-    ctx.fillStyle = "#009900" 
-    ctx.strokeStyle = "#000000"
+    ctx.fillStyle = "#00FFFF" 
     ctx.fillRect(elementDuSnake.x,elementDuSnake.y,10,10)
-    ctx.strokeRect(elementDuSnake.x,elementDuSnake.y,10,10)
 }
 function creeSnake(){
     snake.forEach(elementDuSnake=>{
